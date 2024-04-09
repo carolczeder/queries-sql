@@ -1,1 +1,1 @@
-# sql-curso-udemy
+# SQL Curso - Udemy
