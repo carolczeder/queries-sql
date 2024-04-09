@@ -1,0 +1,21 @@
+# Aprendendo a usar o comando SELECT para trazer as colunas das tabelas existentes no dataset e também para criar colunas com resultados de cálculos.
+
+SELECT
+  2+4 AS coluna_01,
+  3*4 AS coluna_02,
+  "Carol Czeder" AS name,
+  "27" AS age;
+
+SELECT
+  name
+FROM ecommerce.categories;
+
+SELECT 
+  name,
+  price,
+FROM ecommerce.produtcs;
+
+SELECT 
+  email,
+  cell_phone,
+FROM ecommerce.customers;
