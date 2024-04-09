@@ -1,1 +1,1 @@
-# Consultas a Banco de Dados utilizando linguagem SQL, do Básico ao Avançado, com Google BigQuery.
+# Consultas a Banco de Dados utilizando linguagem SQL com Google BigQuery.
