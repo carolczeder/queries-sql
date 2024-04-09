@@ -1,0 +1,71 @@
+# aritméticos
+SELECT 
+  7+4 AS soma,
+  25-8 AS subtracao,
+  15/3 AS divisao,
+  250*7 As multiplicacao;
+
+# comparação
+SELECT
+  5=5 AS coluna_01,
+  1 > 10 AS coluna_02,
+  100 > 3 AS coluna_03,
+  60 <= 60 AS coluna_04,
+  17 != 17 AS coluna_05;
+
+#between 
+SELECT
+  20 between 50 AND 80,
+  10 between 10 AND 50,
+  2 between 1 AND 5;
+
+SELECT 
+  *
+FROM ecommerce.produtcs
+WHERE price between 10 AND 100
+LIMIT 20;
+
+# like
+SELECT 
+  *
+FROM ecommerce.customers
+WHERE first_name like 'J%';
+
+SELECT
+  *
+FROM ecommerce.customers
+WHERE first_name like '%r';
+
+
+# in
+SELECT 
+ *
+FROM ecommerce.produtcs
+WHERE price in (11,13,15);
+
+SELECT 
+ *
+FROM `curso-sql-udemy-419718.ecommerce.customers`
+WHERE state in ("Acre", "Bahia");
+
+# is null and is not null
+SELECT 
+  *
+FROM ecommerce.customers
+WHERE street is null;
+
+SELECT 
+  *
+FROM ecommerce.customers
+WHERE street is not null;
+
+# is true and is not true/is false
+SELECT 
+ * 
+FROM bigquery-public-data.chicago_crime.crime
+WHERE domestic is not true;
+
+SELECT 
+ * 
+FROM bigquery-public-data.chicago_crime.crime
+WHERE domestic is true;
