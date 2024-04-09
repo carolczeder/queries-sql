@@ -19,3 +19,17 @@ SELECT
   email,
   cell_phone,
 FROM ecommerce.customers;
+
+# Usando o comando LIMIT E DISTINCT
+
+SELECT  
+  *
+FROM `curso-sql-udemy-419718.ecommerce.categories` LIMIT 8
+
+SELECT DISTINCT 
+  first_name 
+FROM ecommerce.customers;
+
+SELECT
+  COUNT(DISTINCT first_name)
+FROM ecommerce.customers;
